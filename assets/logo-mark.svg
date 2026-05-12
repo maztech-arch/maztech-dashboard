@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mz-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB546"></stop>
+      <stop offset="1" stop-color="#FF8A00"></stop>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0C1117" stroke="url(#mz-grad)" stroke-width="2"></rect>
+  
+  <path d="M14 46 V22 L20 22 L32 36 L44 22 L50 22 V46 L44 46 V30 L34 42 L30 42 L20 30 V46 Z" fill="url(#mz-grad)"></path>
+  
+  <rect x="14" y="14" width="4" height="4" fill="url(#mz-grad)"></rect>
+  <rect x="22" y="14" width="4" height="4" fill="url(#mz-grad)" opacity="0.7"></rect>
+  <rect x="38" y="14" width="4" height="4" fill="url(#mz-grad)" opacity="0.7"></rect>
+  <rect x="46" y="14" width="4" height="4" fill="url(#mz-grad)"></rect>
+  
+  <circle cx="54" cy="50" r="2" fill="#2BD4F4"></circle>
+</svg>

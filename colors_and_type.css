@@ -1,0 +1,278 @@
+/* ============================================================
+   MAZTECH GARAGE — colors_and_type.css
+   Industrial-precision dashboard for an auto repair shop.
+   Default theme = dark "slate". Light theme = "light".
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+/* ---------- Color tokens (DARK / "slate" — default) ---------- */
+:root,
+[data-theme="slate"] {
+  /* Surfaces — navy-tinted slate, matched to the badge */
+  --bg-0:        #070B14;   /* page bg, deepest */
+  --bg-1:        #0D1424;   /* app shell / sidebar */
+  --bg-2:        #121B2E;   /* card / panel */
+  --bg-3:        #1A2540;   /* raised / hover */
+  --bg-4:        #243151;   /* inset / chip */
+
+  --line-1:      rgba(255,255,255,0.06);  /* hairline */
+  --line-2:      rgba(255,255,255,0.10);  /* default border */
+  --line-3:      rgba(255,255,255,0.16);  /* emphasized border */
+
+  /* Foreground */
+  --fg-1:        #F1F5F9;   /* primary text */
+  --fg-2:        #B6C2D1;   /* secondary text */
+  --fg-3:        #7A8A9C;   /* tertiary / labels */
+  --fg-4:        #4B5868;   /* disabled / placeholders */
+
+  /* Brand primary — Maztech Navy (badge body) */
+  --navy-50:     #E7ECF7;
+  --navy-100:   #C2CDE8;
+  --navy-200:   #8A9EC8;
+  --navy-300:   #5D75A8;
+  --navy-400:   #3E5688;   /* HOVER */
+  --navy-500:   #243F75;   /* PRIMARY — from badge */
+  --navy-600:   #1A2F5C;   /* PRESS */
+  --navy-700:   #122247;
+  --navy-900:   #060C1C;
+  --navy-glow:  rgba(99,139,210,0.40);
+
+  /* Chrome / Silver — badge stroke + iconography */
+  --chrome-50:   #FCFCFD;
+  --chrome-100:  #F1F3F7;
+  --chrome-200:  #D6DAE3;
+  --chrome-300:  #B5BCCB;
+  --chrome-400:  #8E97A9;
+  --chrome-500:  #6E7889;
+  --chrome-grad: linear-gradient(180deg, #F1F3F7 0%, #C0C7D4 32%, #8E97A9 60%, #D6DAE3 100%);
+
+  /* Energy accent — Maztech Amber (sparks / welding / headlight) */
+  --amber-50:    #FFF6E5;
+  --amber-100:   #FFE4B8;
+  --amber-200:   #FFCF7A;
+  --amber-300:   #FFB546;
+  --amber-400:   #FFA01F;   /* HOVER */
+  --amber-500:   #FF8A00;   /* PRIMARY */
+  --amber-600:   #E07300;   /* PRESS */
+  --amber-700:   #B05700;
+  --amber-900:   #3D1F00;
+  --amber-glow:  rgba(255,138,0,0.35);
+
+  /* Secondary — Diagnostic Cyan (gauges, data) */
+  --cyan-50:     #E6FBFF;
+  --cyan-200:    #8CEBFF;
+  --cyan-400:    #2BD4F4;
+  --cyan-500:    #00BBE0;
+  --cyan-600:    #0096B8;
+  --cyan-glow:   rgba(43,212,244,0.35);
+
+  /* Semantic */
+  --success:     #22C55E;
+  --success-bg:  rgba(34,197,94,0.12);
+  --warn:        #F59E0B;
+  --warn-bg:     rgba(245,158,11,0.14);
+  --danger:      #EF4444;
+  --danger-bg:   rgba(239,68,68,0.14);
+  --info:        #38BDF8;
+  --info-bg:     rgba(56,189,248,0.14);
+
+  /* Brand aliases — NAVY is primary; AMBER is the energy CTA accent */
+  --brand:           var(--navy-500);
+  --brand-hover:     var(--navy-400);
+  --brand-press:     var(--navy-600);
+  --brand-fg:        #F1F3F7;          /* text on navy */
+  --accent:          var(--amber-500); /* energy / CTAs */
+  --accent-hover:    var(--amber-400);
+  --accent-press:    var(--amber-600);
+  --accent-fg:       #1A0F00;
+  --live:            var(--cyan-400);  /* real-time only */
+
+  /* Charts */
+  --chart-1: #FF8A00;
+  --chart-2: #2BD4F4;
+  --chart-3: #A78BFA;
+  --chart-4: #22C55E;
+  --chart-5: #F472B6;
+  --chart-6: #FACC15;
+  --chart-grid: rgba(255,255,255,0.06);
+
+  /* Effects */
+  --shadow-sm:   0 1px 2px rgba(0,0,0,0.40);
+  --shadow-md:   0 6px 18px rgba(0,0,0,0.45), 0 2px 4px rgba(0,0,0,0.30);
+  --shadow-lg:   0 24px 60px rgba(0,0,0,0.55), 0 4px 12px rgba(0,0,0,0.35);
+  --shadow-glow:    0 0 24px var(--amber-glow);
+  --shadow-navy:    0 0 28px var(--navy-glow);
+  --inset-hi:    inset 0 1px 0 rgba(255,255,255,0.06);
+
+  /* Radii */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-2xl: 28px;
+  --r-pill: 999px;
+
+  /* Spacing scale (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+
+  /* Motion */
+  --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:   cubic-bezier(0.55, 0, 0.68, 0);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 120ms;
+  --dur-med:  220ms;
+  --dur-slow: 420ms;
+
+  /* Background textures */
+  --grid-color: rgba(178,196,228,0.045);
+  --grid-bg: radial-gradient(ellipse at top, rgba(62,86,136,0.18), transparent 55%),
+             radial-gradient(ellipse 60% 40% at 80% 100%, rgba(255,138,0,0.05), transparent 60%),
+             linear-gradient(var(--grid-color) 1px, transparent 1px) 0 0 / 32px 32px,
+             linear-gradient(90deg, var(--grid-color) 1px, transparent 1px) 0 0 / 32px 32px,
+             var(--bg-0);
+}
+
+/* ---------- LIGHT theme ---------- */
+[data-theme="light"] {
+  --bg-0:        #F5F6F8;
+  --bg-1:        #FFFFFF;
+  --bg-2:        #FFFFFF;
+  --bg-3:        #F2F4F7;
+  --bg-4:        #E9ECF1;
+
+  --line-1: rgba(15,23,42,0.05);
+  --line-2: rgba(15,23,42,0.10);
+  --line-3: rgba(15,23,42,0.18);
+
+  --fg-1: #0B1220;
+  --fg-2: #364152;
+  --fg-3: #5B6677;
+  --fg-4: #94A1B2;
+
+  --brand-fg: #1A0F00;
+  --grid-color: rgba(15,23,42,0.05);
+  --grid-bg: radial-gradient(ellipse at top, rgba(255,138,0,0.10), transparent 55%),
+             linear-gradient(var(--grid-color) 1px, transparent 1px) 0 0 / 32px 32px,
+             linear-gradient(90deg, var(--grid-color) 1px, transparent 1px) 0 0 / 32px 32px,
+             var(--bg-0);
+
+  --shadow-sm:   0 1px 2px rgba(15,23,42,0.06);
+  --shadow-md:   0 6px 18px rgba(15,23,42,0.08), 0 2px 4px rgba(15,23,42,0.05);
+  --shadow-lg:   0 24px 60px rgba(15,23,42,0.12);
+}
+
+/* ---------- Type tokens ---------- */
+:root {
+  --font-display: "Space Grotesk", "IBM Plex Sans Thai", "IBM Plex Sans",
+                  ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    "IBM Plex Sans", "IBM Plex Sans Thai",
+                  ui-sans-serif, system-ui, sans-serif;
+  --font-thai:    "IBM Plex Sans Thai", "IBM Plex Sans",
+                  ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Scale */
+  --fs-xs:   11px;
+  --fs-sm:   13px;
+  --fs-base: 14px;
+  --fs-md:   15px;
+  --fs-lg:   18px;
+  --fs-xl:   22px;
+  --fs-2xl:  28px;
+  --fs-3xl:  36px;
+  --fs-4xl:  48px;
+  --fs-5xl:  64px;
+
+  /* Tracking */
+  --tr-tight:  -0.02em;
+  --tr-normal: 0;
+  --tr-wide:   0.04em;
+  --tr-mega:   0.12em;   /* eyebrows, micro-labels */
+}
+
+/* ---------- Semantic typography ---------- */
+.h-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-5xl);
+  line-height: 1.02;
+  letter-spacing: var(--tr-tight);
+}
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-3xl);
+  line-height: 1.1;
+  letter-spacing: var(--tr-tight);
+}
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-2xl);
+  line-height: 1.2;
+  letter-spacing: var(--tr-tight);
+}
+.h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-xl);
+  line-height: 1.25;
+}
+.h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-lg);
+  line-height: 1.35;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tr-mega);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+.p, .body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-base);
+  line-height: 1.55;
+  color: var(--fg-2);
+}
+.small {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  color: var(--fg-3);
+}
+.metric {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--fs-3xl);
+  letter-spacing: -0.02em;
+  font-feature-settings: "tnum" 1;
+}
+.metric-sm {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--fs-lg);
+  font-feature-settings: "tnum" 1;
+}
+.code, code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+.thai {
+  font-family: var(--font-thai);
+}

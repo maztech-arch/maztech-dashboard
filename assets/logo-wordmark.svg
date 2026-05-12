@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" fill="none">
+  <defs>
+    <linearGradient id="mz-grad-w" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB546"></stop>
+      <stop offset="1" stop-color="#FF8A00"></stop>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0C1117" stroke="url(#mz-grad-w)" stroke-width="2"></rect>
+  <path d="M14 46 V22 L20 22 L32 36 L44 22 L50 22 V46 L44 46 V30 L34 42 L30 42 L20 30 V46 Z" fill="url(#mz-grad-w)"></path>
+  <rect x="14" y="14" width="4" height="4" fill="url(#mz-grad-w)"></rect>
+  <rect x="22" y="14" width="4" height="4" fill="url(#mz-grad-w)" opacity="0.7"></rect>
+  <rect x="38" y="14" width="4" height="4" fill="url(#mz-grad-w)" opacity="0.7"></rect>
+  <rect x="46" y="14" width="4" height="4" fill="url(#mz-grad-w)"></rect>
+  <circle cx="54" cy="50" r="2" fill="#2BD4F4"></circle>
+  <text x="80" y="36" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="26" fill="#F1F5F9" letter-spacing="-0.02em">MAZTECH</text>
+  <text x="80" y="54" font-family="JetBrains Mono, monospace" font-weight="500" font-size="11" fill="#7A8A9C" letter-spacing="0.32em">GARAGE · EST 2024</text>
+</svg>
