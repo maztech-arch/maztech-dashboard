@@ -1,5 +1,5 @@
 // Customers Component
-const CustomersTab = () => {
+const CustomersScreen = () => {
   const [customers, setCustomers] = React.useState([
     { id: 1, name: 'นายสมชาย กิจการ', phone: '087-123-4567', email: 'somchai@email.com', visits: 12, lastVisit: '2025-05-10', totalSpent: '45,000' },
     { id: 2, name: 'นางสาวลดา อ่อนหวาน', phone: '089-234-5678', email: 'ladaon@email.com', visits: 8, lastVisit: '2025-05-08', totalSpent: '28,500' },
