@@ -1,5 +1,5 @@
 // Appointments Component
-const AppointmentsTab = () => {
+const AppointmentsScreen = () => {
   const [appointments, setAppointments] = React.useState([
     { id: 1, date: '2025-05-14', time: '08:00', customer: 'นายสมชาย กิจการ', service: 'เปลี่ยนน้ำมันและตรวจสภาพ', status: 'ยืนยันแล้ว', phone: '087-123-4567' },
     { id: 2, date: '2025-05-14', time: '09:30', customer: 'นายวิทยา รถดี', service: 'ซ่อมเบรก', status: 'ยืนยันแล้ว', phone: '081-345-6789' },
